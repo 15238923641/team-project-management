@@ -1,0 +1,32 @@
+{
+    "task id": "github-label-color-standard-verifier",
+    "task name": "GitHub 仓库标签颜色标准化验证脚本",
+    "category_id": "github_asset_verification",
+    "category_name": "GitHub 资产验证",
+    "description": "A GitHub API-driven verification script for standardizing label colors across repositories. Core validation scope includes: environment configuration verification (GITHUB_TOKEN, GITHUB_ORG), feature branch existence check, label documentation completeness validation, issue creation compliance (required sections, keywords, initial labels), PR creation compliance (issue reference format, required sections, keywords, label count), issue label completeness (22 expected labels), issue comment compliance (PR reference, keywords, content flags), documentation-label consistency verification, and PR-label consistency validation. Configurable validation rules via CONFIG dict for branch names, file paths, expected labels, keywords, and validation thresholds. Dependencies: `requests`, `python-dotenv`; requires pre-configured `.env` (GITHUB_TOKEN, GITHUB_ORG).",
+    "author": "AI Assistant",
+    "created_at": "2025-09-16",
+    "difficulty": "L3",
+    "tags": [
+        "github api",
+        "label standardization",
+        "color validation",
+        "issue compliance",
+        "pr verification",
+        "documentation consistency",
+        "workflow validation"
+    ],
+    "mcp": [
+        "github_api_integration",
+        "environment_configuration",
+        "markdown_parsing",
+        "label_consistency_check",
+        "issue_pr_workflow_validation"
+    ],
+    "meta_data": {
+        "stateType": "text",
+        "stateContent": "github_label_color_standard_verification/\n  verify_label_standardization.py  # 主验证脚本\n  .env  # 环境变量文件（GITHUB_TOKEN, GITHUB_ORG）\n  target-repo/team-project-management/  # 目标仓库\n    docs/label-color-standardization.md  # 标签文档\n    feat/label-color-standard/  # 功能分支\n  dependencies/\n    requests (Python package)\n    python-dotenv (Python package)",
+        "stateUrl": "https://github.com/haosenchai9-afk/GitHub-Label-Color-Standard-Verification.git",
+        "stateOriginalUrl": "https://github.com/haosenchai9-afk/GitHub-Label-Color-Standard-Verification.git"
+    }
+}
