@@ -159,7 +159,7 @@ def verify_label_standardization() -> bool:
         },
         # Issue验证配置
         "issue_requirements": {
-            "title_keywords": ["Label", "standard"],
+            "title_keywords": ["Label", "standard", "documentation"],
             "body_keywords": ["label", "color", "standard"],
             "required_sections": ["## Background", "## Required Label List"],
             "initial_labels": ["documentation", "enhancement"]
